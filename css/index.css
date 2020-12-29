@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-color: red;
+}
+
+nav{
+    width: 100%;
+    height: 200px;
+    background-color: yellow;
+}
+
+section{
+    width: 100%;
+    height: 200px;
+}
+
+.greenSection{
+    background-color: lightgreen;
+}
+
+.whiteSection{
+    background-color: white;
+}
