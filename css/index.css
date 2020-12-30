@@ -315,8 +315,12 @@ footer > p > a {
   }
 
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,255,88,0.5);
   }
+
+  .image-container:not(:first-of-type) {
+    display: none;
+}
 
 /* animazione fade per immagine carousel */
 
