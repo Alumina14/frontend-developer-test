@@ -4,27 +4,328 @@
     box-sizing: border-box;
 }
 
-header{
+#container{
     width: 100%;
-    height: 200px;
-    background-color: red;
 }
 
-nav{
+/* stile nav */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.menu > div > img{
+    height: 54px;
+    width: auto;
+}
+
+.menu > div > .fas{
+    color: #1A1A1A;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.menu > div > .fa-shopping-cart{
+    color: #007536;
+    padding-left: 20px;
+}
+
+.fa-chevron-lef{
+    font-size: 100px;
+}
+
+#logo{
+    height: 100px;
+    width: auto;
+}
+
+/* stile header con jumbotron */
+
+.jumbotron{
     width: 100%;
-    height: 200px;
-    background-color: yellow;
+    height: 600px;
+    background-image: url('../images/jumbotron-lg.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: darkgrey;
+    position: relative;
+}
+
+.search{
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 40px;
+}
+
+.p-font-size {
+    font-size: 24px;
+}
+
+.search-bar{
+    margin-bottom: 10px;
+}
+
+.search-bar > input {
+    width: 40%;
+    padding: 20px;
+    border: 1px solid grey;
+    border-right: none;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.search-bar > button {
+    padding: 20px;
+    background: white;
+    color: #007536;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search > div{
+    margin-top: 20px;
 }
 
 section{
     width: 100%;
-    height: 200px;
+    height: auto;
+    padding: 20px 40px;
+    
 }
 
 .greenSection{
-    background-color: lightgreen;
+    background-color: #CEE1D3;
 }
 
 .whiteSection{
     background-color: white;
+}
+
+.come-funziona{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.come-funziona-content{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 24px;
+    padding: 30px 0;
+}
+
+.link-style{
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.link-style > a {
+    color: #007536;
+}
+
+
+.scegliere-daje-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+
+.scegliere-daje-content > div > img{
+    height: 480px;
+    width: auto;
+}
+
+.scegliere-daje-sotto-content{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.loghi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.loghi > img{
+    height: 180px;
+    width: auto;
+}
+
+.feedback-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feedback{
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+    border: 2px solid #565656;
+    margin-top: 20px;
+    border-radius: 38px;
+}
+
+.feedback > p {
+    margin: 10px 0;
+}
+
+.fa-star{
+    color: gold;
+    font-size: 24px;
+    padding-right: 2px;
+}
+
+.domande-frequenti-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.domande-frequenti-content > div{
+    margin-top: 20px;
+}
+
+.domande-frequenti-content > div > p{
+    margin-top: 14px;
+}
+
+.link{
+    color: black;
+}
+
+.negozio >p{
+    margin-top: 20px;
+}
+
+#contattaci{
+    background-color: white;
+    color: black;
+    padding: 20px 48px;
+    border-radius: 10px;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 22px;
+}
+
+footer{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer > p > a {
+    color: black;
+}
+
+.fa-heart{
+    color: red;
+    font-size: 22px;
+}
+
+/* inizio pagina merchant */
+
+.margin{
+    margin-top: 10px;
+}
+
+.ex-price{
+    color: grey;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.price{
+    color: #007536;
+    font-weight: bold;
+}
+
+.disabled-input{
+        width: 52px;
+        height: 52px;    
+        border: 2px solid lightgrey;
+        font-size: 24px;
+        color: grey;
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+}
+
+.margin-prod{
+    margin-top: 24px;
+}
+
+/* carousel */
+
+.carousel-container{
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.image-carousel{
+    width: 100%;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    cursor: pointer;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+/* animazione fade per immagine carousel */
+
+.animazione{
+    animation-name: sparisci;
+    animation-duration: 1.5s;
+}
+
+@keyframes sparisci {
+    from {opacity: .4}
+    to {opacity: 1}
 }
