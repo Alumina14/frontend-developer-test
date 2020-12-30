@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -140,8 +139,10 @@
                     <h1>Lenticchia I.G.P. di Castelluccio - Confezione da 500 gr</h1>
                     <p class="margin"><span class="price">€6,79</span> al pezzo</p>
                 </div>
-                <div>
-                    <input class="disabled-input" type="text" placeholder="0" disabled>
+                <div class="numb-container">
+                    <button class="decrementa">-</button>
+                    <input class="disabled-input" type="text" class="number" id="1" value="0">
+                    <button class="incrementa">+</button>
                 </div>
             </div>
             <div class="products margin-prod">
@@ -149,8 +150,10 @@
                     <h1>Lenticchia Rossa decorticata - Confezione da 500 gr</h1>
                     <p class="margin"><span class="price">€4,77</span> al pezzo</p>
                 </div>
-                <div>
-                    <input class="disabled-input" type="text" placeholder="0" disabled>
+                <div class="numb-container">
+                    <button class="decrementa">-</button>
+                    <input class="disabled-input" type="text" class="number" id="2" value="0">
+                    <button class="incrementa">+</button>
                 </div>
             </div>
             <div class="products margin-prod">
@@ -159,7 +162,9 @@
                     <p class="margin"><span class="price">€1,27</span> al pezzo</p>
                 </div>
                 <div>
-                    <input class="disabled-input" type="text" placeholder="0" disabled>
+                    <button class="decrementa">-</button>
+                    <input class="disabled-input" type="text" class="number" id="3" value="0">
+                    <button class="incrementa">+</button>
                 </div>
             </div>
             <div class="products margin-prod">
@@ -168,7 +173,9 @@
                     <p class="margin"><span class="price">€1,27</span> al pezzo</p>
                 </div>
                 <div>
-                    <input class="disabled-input" type="text" placeholder="0" disabled>
+                    <button class="decrementa">-</button>
+                    <input class="disabled-input" type="text" class="number" id="4" value="0">
+                    <button class="incrementa">+</button>
                 </div>
             </div>
         </section>
@@ -185,6 +192,7 @@
                     Di Gennaro</a></p>
         </footer>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
