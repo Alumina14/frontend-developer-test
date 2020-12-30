@@ -351,3 +351,26 @@ footer > p > a {
         justify-content: space-around;
     }
   }
+
+  .incrementa, .decrementa{
+      width: 30px;
+      height: 30px;
+      background: white;
+      font-size: 28px;
+      color: green;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      outline: none;
+  }
+
+  .numb-container{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: nowrap;
+  }
+
+  .opacity{
+      opacity: 0;
+  }
